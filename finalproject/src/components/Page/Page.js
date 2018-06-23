@@ -4,6 +4,7 @@ import data from "../../data.json";
 import Container from "../Container/Container";
 import Navbar from '../Navbar/Navbar';
 import Jumbotron from '../Jumbotron/Jumbotron';
+import Quiz from "../Quiz/Quiz"
 
 class Page extends Component {
   state = {
@@ -25,6 +26,10 @@ class Page extends Component {
             ))}
           </div>
         </Container>
+        <Quiz 
+        quizTitle ={data[0].quizTitle}
+        Q1 = {data[0].q1.question}
+        />
 
       </div>
     );
