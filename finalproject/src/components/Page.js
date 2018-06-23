@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import QuizBox from "./QuizBox";
 import data from "../data.json";
 import Container from "./Container";
+import Quiz from "./Quiz";
 
 class Page extends Component {
   state = {
@@ -21,6 +22,10 @@ class Page extends Component {
             ))}
           </div>
         </Container>
+        <Quiz 
+        quizTitle ={data[0].quizTitle}
+        Q1 = {data[0].q1.question}
+        />
 
       </div>
     );
