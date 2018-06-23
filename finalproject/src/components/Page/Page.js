@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import QuizBox from "./QuizBox";
-import data from "../data.json";
-import Container from "./Container";
+import QuizBox from "../QuizBox/QuizBox";
+import data from "../../data.json";
+import Container from "../Container/Container";
+import Navbar from '../Navbar/Navbar';
+import Jumbotron from '../Jumbotron/Jumbotron';
 
 class Page extends Component {
   state = {
@@ -10,6 +12,8 @@ class Page extends Component {
   render() {
     return (
       <div>
+        <Navbar />
+        <Jumbotron />
         <Container>
           <div className="row">
             {this.state.data.map(item => (
