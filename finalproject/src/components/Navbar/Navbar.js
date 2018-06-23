@@ -1,7 +1,7 @@
 import React from "react";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-class Example extends React.Component {
+class NavExample extends React.Component {
     constructor(props) {
       super(props);
   
@@ -38,4 +38,4 @@ class Example extends React.Component {
     }
   }
   
-export default Example;
+export default NavExample;
