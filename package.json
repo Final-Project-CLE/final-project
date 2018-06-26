@@ -1,0 +1,22 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "A React app test by mike",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Final-Project-CLE/final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Final-Project-CLE/final-project/issues"
+  },
+  "homepage": "https://github.com/Final-Project-CLE/final-project#readme",
+  "dependencies": {
+    "yarn": "^1.7.0"
+  }
+}
