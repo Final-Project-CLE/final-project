@@ -4,12 +4,12 @@ import QuizBox from "../QuizBox/QuizBox";
 import data from "../../data.json";
 import Navbar from '../Navbar/Navbar';
 import Jumbotron from '../Jumbotron/Jumbotron';
-import Home from "../../pages/Home";
+import Quizzes from "../../pages/Quizzes";
 import Login from "../../pages/Login";
 import NewUser from "../../pages/NewUser";
 import SingleQuiz from "../../pages/Quiz";
-import Quiz from "../Quiz/Quiz"
-
+import Quiz from "../Quiz/Quiz";
+import Home from "../../pages/Home";
 class Page extends Component {
   state = {
     data

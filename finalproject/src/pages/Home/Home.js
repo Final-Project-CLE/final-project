@@ -1,17 +1,26 @@
 import React, { Component } from "react";
 
-
+import quizAPI from "../../utils/quizAPI";
 import { Link } from "react-router-dom";
 
 
-const Home = () =>
+
+
+class Home extends Component {
+  state = {
+    homes: [],
+
+  };
+
+
+
+
+
   render() {
     return (
-    <div>
-      <h1>Welcome to QuizMe!</h1>
-      <h2>Click on any quiz you'd like to try below </h2>
-      <h2>Complete as many quizzes as you can to up your ranking!</h2>
-	  </div>
+      <div>
+        <p>Home Page</p>
+      </div>
     );
   }
 }

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 class Quizzes extends Component {
   state = {
-    quizzes: [],
+    quizes: []
 
   };
 
