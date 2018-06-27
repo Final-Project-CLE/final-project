@@ -10,6 +10,7 @@ import NewUser from "../../pages/NewUser";
 import SingleQuiz from "../../pages/Quiz";
 import Quiz from "../Quiz/Quiz";
 import Home from "../../pages/Home";
+
 class Page extends Component {
   state = {
     data
@@ -24,8 +25,8 @@ class Page extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/newuser" component={NewUser} />
-            <Route exact path="/quiz" component={Quizzes} />
-            <Route path="/quiz/:id" component={SingleQuiz} />
+            <Route exact path="/quizzes" component={Quizzes} />
+
           </Switch>
      </div>
     </Router>

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 class Quizzes extends Component {
   state = {
-    quizes: []
+    quizzes: []
 
   };
 
@@ -16,13 +16,13 @@ class Quizzes extends Component {
 
 
 
-render() {
-  return (
-    <div>
-      <p>All Quizzes Page</p>
-    </div>
-  );
-}
-}
+  render() {
+    return (
+      <div>
+        <p>All Quizzes Page</p>
+      </div>
+    );
+  }
+};
 
 export default Quizzes;
