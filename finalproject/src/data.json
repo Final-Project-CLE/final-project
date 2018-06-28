@@ -1,5 +1,5 @@
 [
-    {   
+    {
         "id": 1,
         "quizTitle":"Test Quiz 1" ,
         "q1": {
@@ -22,7 +22,7 @@
                     "correct": true
                 }
             }
-            
+
         },
         "q2": {
             "question": "Answer q2" ,
@@ -64,7 +64,7 @@
                     "answer":"This is the fourth answer. It is wrong",
                     "correct": false
                 }
-            } 
+            }
         }
     },
 
@@ -91,7 +91,7 @@
                     "correct": true
                 }
             }
-            
+
         },
         "q2": {
             "question": "Answer q2" ,
@@ -133,7 +133,7 @@
                     "answer":"This is the fourth answer. It is wrong",
                     "correct": false
                 }
-            } 
+            }
         }
     }
 ]

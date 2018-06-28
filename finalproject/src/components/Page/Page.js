@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import QuizBox from "../QuizBox/QuizBox";
 import data from "../../data.json";
-import Container from "../Container/Container";
-import NavExample from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import Jumbotron from '../Jumbotron/Jumbotron';
-import Quiz from "../Quiz/Quiz"
+import Quizzes from "../../pages/Quizzes";
+import Login from "../../pages/Login";
+import NewUser from "../../pages/NewUser";
+import SingleQuiz from "../../pages/Quiz";
+import Quiz from "../Quiz/Quiz";
+import Home from "../../pages/Home";
+import NewQuiz from "../../pages/NewQuiz"
 
 class Page extends Component {
   state = {
@@ -12,26 +18,20 @@ class Page extends Component {
   }
   render() {
     return (
+    <Router>
       <div>
-        <NavExample />
+        <Navbar />
         <Jumbotron />
-        <Container>
-          <div className="row">
-            {this.state.data.map(item => (
-              <QuizBox
-                key={item.id}
-                id={item.id}
-                quizTitle={item.quizTitle}
-              />
-            ))}
-          </div>
-        </Container>
-        <Quiz 
-        quizTitle ={data[0].quizTitle}
-        Q1 = {data[0].q1.question}
-        />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/newuser" component={NewUser} />
+            <Route exact path="/quizzes" component={Quizzes} />
+            <Route exact path="/newquiz" component={NewQuiz} />
 
-      </div>
+          </Switch>
+     </div>
+    </Router>
     );
   }
 }
