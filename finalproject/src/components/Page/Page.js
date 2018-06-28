@@ -10,6 +10,7 @@ import NewUser from "../../pages/NewUser";
 import SingleQuiz from "../../pages/Quiz";
 import Quiz from "../Quiz/Quiz";
 import Home from "../../pages/Home";
+import NewQuiz from "../../pages/NewQuiz"
 
 class Page extends Component {
   state = {
