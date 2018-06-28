@@ -26,6 +26,7 @@ class Page extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/newuser" component={NewUser} />
             <Route exact path="/quizzes" component={Quizzes} />
+            <Route exact path="/newquiz" component={NewQuiz} />
 
           </Switch>
      </div>
