@@ -4,13 +4,13 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
 class NavExample extends React.Component {
     constructor(props) {
       super(props);
-  
+
       this.toggleNavbar = this.toggleNavbar.bind(this);
       this.state = {
         collapsed: true
       };
     }
-  
+
     toggleNavbar() {
       this.setState({
         collapsed: !this.state.collapsed
@@ -30,6 +30,21 @@ class NavExample extends React.Component {
                 <NavItem>
                   <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink href="/">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/login">Log In</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/newuser">Sign Up</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/quizzes">View Quizzes</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/newquiz">Create A quiz</NavLink>
+                </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
@@ -37,5 +52,5 @@ class NavExample extends React.Component {
       );
     }
   }
-  
+
 export default NavExample;
