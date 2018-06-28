@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import QuizBox from "../QuizBox/QuizBox";
 import data from "../../data.json";
 import Container from "../Container/Container";
-import Navbar from '../Navbar/Navbar';
+import NavExample from '../Navbar/Navbar';
 import Jumbotron from '../Jumbotron/Jumbotron';
 import Quiz from "../Quiz/Quiz"
 
@@ -13,7 +13,7 @@ class Page extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <NavExample />
         <Jumbotron />
         <Container>
           <div className="row">
