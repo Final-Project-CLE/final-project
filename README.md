@@ -1,3 +1,2 @@
 # final-project
-A React app
-test by mike
+A React app built with Node/Express and MongoDB.
