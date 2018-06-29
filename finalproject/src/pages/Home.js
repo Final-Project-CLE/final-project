@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import QuizBox from "../../components/QuizBox/QuizBox";
-import data from "../../data.json";
-import Container from "../../components/Container/Container";
+import QuizBox from "../components/QuizBox/QuizBox";
+import data from "../data.json";
+import Container from "../components/Container/Container";
+import Example from '../components/Navbar/Navbar';
+import Jumbotron from '../components/Jumbotron/Jumbotron';
 
 
-class Quizzes extends Component {
+class Test extends Component {
   state = {
     data
   }
@@ -12,6 +14,8 @@ class Quizzes extends Component {
   render() {
     return (
       <div>
+        <Example />
+        <Jumbotron />
         <Container>
           <div className="row">
             {this.state.data.map(item => (
@@ -29,4 +33,4 @@ class Quizzes extends Component {
   }
 }
 
-export default Quizzes;
+export default Test;
