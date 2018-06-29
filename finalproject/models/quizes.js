@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const quizesSchema = new Schema({
     // quizNumber: {
     quizTitle: { type: String, required: true },
+    author: {type: String, required: true},
     q1: {
         question: { type: String, required: true },
         answers: {
