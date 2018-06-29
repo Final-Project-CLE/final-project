@@ -6,7 +6,7 @@ import {
 } from 'reactstrap';
 
 const theStyle = {
-    "font-size": "15px"
+    "font-size": "13px"
 }
 
 
@@ -22,7 +22,7 @@ const Quiz = props => (
                                     <CardTitle>{props.quizTitle}</CardTitle>
                                     <CardSubtitle>{props.Q1}</CardSubtitle>
                                     <CardText>
-                                        <ButtonGroup style={theStyle} className="btn-group-justified">
+                                        <ButtonGroup className="btn-group-justified">
                                             <Button style={theStyle} value={props.correctQ1A1}>{props.Q1A1}</Button>
                                             <Button style={theStyle} value={props.correctQ1A2}>{props.Q1A2}</Button>
                                             <Button style={theStyle} value={props.correctQ1A3}>{props.Q1A3}</Button>

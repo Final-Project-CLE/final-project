@@ -1,28 +1,32 @@
-import React, { Component } from "react";
-
-import quizAPI from "../../utils/quizAPI";
-import { Link } from "react-router-dom";
-
-
+import React, { Component } from 'react';
+import QuizBox from "../../components/QuizBox/QuizBox";
+import data from "../../data.json";
+import Container from "../../components/Container/Container";
 
 
 class Quizzes extends Component {
   state = {
-    quizzes: []
-
-  };
-
-
-
-
+    data
+  }
 
   render() {
     return (
       <div>
-        <p>All Quizzes Page</p>
+        <Container>
+          <div className="row">
+            {this.state.data.map(item => (
+              <QuizBox
+                key={item.id}
+                id={item.id}
+                quizTitle={item.quizTitle}
+              />
+            ))}
+          </div>
+        </Container>        
+
       </div>
     );
   }
-};
+}
 
 export default Quizzes;

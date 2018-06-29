@@ -6,7 +6,7 @@ import Example from '../components/Navbar/Navbar';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
 
 
-class Home extends Component {
+class Test extends Component {
   state = {
     data
   }
@@ -33,4 +33,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Test;

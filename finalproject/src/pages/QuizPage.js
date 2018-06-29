@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import data from "../data.json";
-import Example from '../components/Navbar/Navbar';
-import Jumbotron from '../components/Jumbotron/Jumbotron';
 import Quiz from "../components/Quiz/Quiz"
 import Params from "../components/Params"
 
-class Page extends Component {
+class QuizPage extends Component {
     state = {
         data,
         p: this.props.match.params.id - 1
@@ -21,8 +19,6 @@ class Page extends Component {
     render() {
         return (
             <div>
-                <Example />
-                <Jumbotron />
                 <Quiz
                     quizTitle={this.state.data[this.state.p].quizTitle}
 
@@ -66,4 +62,4 @@ class Page extends Component {
     }
 }
 
-export default Page;
+export default QuizPage;
