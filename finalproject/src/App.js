@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Page from "./components/Page/Page";
 
+
 class App extends Component {
   render() {
     return (
