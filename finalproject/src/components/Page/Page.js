@@ -19,7 +19,7 @@ class Page extends Component {
         <Example />
         <Jumbotron />
         <Container>
-          <div className="row">
+          {/* <div className="row">
             {this.state.data.map(item => (
               <QuizBox
                 key={item.id}
@@ -27,7 +27,7 @@ class Page extends Component {
                 quizTitle={item.quizTitle}
               />
             ))}
-          </div>
+          </div> */}
         </Container>
         <Quiz 
         quizTitle ={data[0].quizTitle}
