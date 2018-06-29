@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import data from "../data.json";
 import Quiz from "../components/Quiz/Quiz"
-import Params from "../components/Params"
 
 class QuizPage extends Component {
     state = {
@@ -12,9 +11,6 @@ class QuizPage extends Component {
         alert("You submitted this thingy!")
     }
 
-    componentDidMount() {
-        console.log(Params);
-    }
 
     render() {
         return (
