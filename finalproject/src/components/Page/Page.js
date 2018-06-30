@@ -8,6 +8,7 @@ import NewUser from "../../pages/NewUser";
 import Home from "../../pages/Home/Home";
 import NewQuiz from "../../pages/NewQuiz/newQuiz"
 import QuizPage from "../../pages/QuizPage"
+import NavExample from '../Navbar/Navbar';
 
 class Page extends Component {
   state = {
@@ -20,7 +21,7 @@ class Page extends Component {
     return (
     <Router>
       <div>
-        
+        <NavExample />
         <Jumbotron />
             <Switch>
             <Route exact path="/" component={Home} />
