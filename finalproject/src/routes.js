@@ -5,7 +5,6 @@ import Home from './pages/Home/Home';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
-import Page from './components/Page/Page';
 
 const auth = new Auth();
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Navbar, Button } from 'react-bootstrap';
-import Page from './components/Page/Page.js';
 
 class App extends Component {
   goTo(route) {
