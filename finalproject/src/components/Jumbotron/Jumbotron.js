@@ -9,4 +9,4 @@ const Jumbotron = () => (
 	</header>
 );
 
-export default Jumbotron;
+export default Jumbotron;	
