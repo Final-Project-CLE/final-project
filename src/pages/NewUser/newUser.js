@@ -2,13 +2,20 @@ import React, { Component } from "react";
 import quizAPI from "../../utils/quizAPI";
 import userAPI from "../../utils/userAPI";
 import { Link } from "react-router-dom";
+import Input from 'react-input-password';
+import PasswordMask from 'react-password-mask';
+
+
+
+
 
 
 class newUser extends Component {
   state = {
     email: "",
     username: "",
-    password: ""
+    password: "",
+    
   };
 //handle any changes to the input field
 handleInputChange=event=>{
@@ -19,6 +26,7 @@ handleInputChange=event=>{
       [name]:value
   });
 };
+
 handleFormSubmit=event=>{
   event.preventDefault();
   
@@ -50,20 +58,22 @@ password:this.state.password
           <input className="form-control"
           value={this.state.email}
           name="email"
-          onChange={this.handleInputChange}
+         onChange={this.handleInputChange}
           type="text"
   
           placeholder="email"
           />
           </div>
           <div className="form-group">
-          <input className="form-control"
-          name="password"
-          value={this.state.password}
-          onChange={this.handleInputChange}
-          type="text"
-  
-          placeholder="password"/>
+         
+          <PasswordMask
+  id="password"
+  className="form-control"
+  name="password"
+  value={this.state.password}
+  onChange={this.handleInputChange}
+  useVendorStyles={false}
+/>
           </div>
           <div className="form-group">
           <button className="btn btn-primary"
