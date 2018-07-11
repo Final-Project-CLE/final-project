@@ -1,5 +1,5 @@
 export const AUTH_CONFIG = {
-  domain: 'doug-sandbox.auth0.com',
-  clientId: '3NhgGjMwPXlyZ1pdKtJUEUREZwwdgZCr',
+  domain: 'quiz-me.auth0.com',
+  clientId: 'aCZypTbdbkGTbInh7KiLVPZk3bxLDS9u',
   callbackUrl: 'http://localhost:3000/callback'
 }
