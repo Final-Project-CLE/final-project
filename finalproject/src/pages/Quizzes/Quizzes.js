@@ -2,11 +2,20 @@ import React, { Component } from 'react';
 import QuizBox from "../../components/QuizBox/QuizBox";
 import data from "../../data.json";
 import Container from "../../components/Container/Container";
+import axios from "axios";
 
 
 class Quizzes extends Component {
   state = {
     data
+  }
+
+  componentDidMount(){
+    axios.get('/routeName').then(res =>{
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
   }
 
   render() {
