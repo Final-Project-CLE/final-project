@@ -1,23 +1,23 @@
 import React, { Component } from "react";
-import quizAPI from "../../utils/quizAPI";
+import QuizAPI from "../../utils/QuizAPI";
 import userAPI from "../../utils/userAPI";
 import { Link } from "react-router-dom";
 
 
 class newUser extends Component {
   state = {
-    email: "",
-    username: "",
-    password: ""
+    title: "",
+    author: "",
+    questions: []
   };
 
 
   render() {
     return (
 
-            <div>
-              <p>New User Page</p>
-            </div>
+      <div>
+        <p>New Quiz Page</p>
+      </div>
 
 
     );

@@ -1,12 +1,32 @@
 import React, { Component } from 'react';
 import QuizBox from "../../components/QuizBox/QuizBox";
-import data from "../../data.json";
+// import data from "../../data.json";
 import Container from "../../components/Container/Container";
+import QuizAPI from "../../utils/QuizAPI";
 
 
 class Quizzes extends Component {
   state = {
-    data
+    quizzes: [],
+    test: ""
+  }
+
+  componentDidMount() {
+    this.loadQuizzes();
+       
+  };
+
+  loadQuizzes() {
+    console.log('I AM A LOAD THING')
+    QuizAPI.getQuizzes()
+    .then(res =>
+      this.setState({ 
+        quizzes: res.data,
+        test: "sean" })
+    )
+    .catch(err => console.log(err));
+    alert(this.state.quizzes) 
+    
   }
 
   render() {
@@ -14,7 +34,7 @@ class Quizzes extends Component {
       <div>
         <Container>
           <div className="row">
-            {this.state.data.map(item => (
+            {this.state.quizzes.map(item => (
               <QuizBox
                 key={item.id}
                 id={item.id}

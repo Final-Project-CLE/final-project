@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import quizAPI from "../../utils/quizAPI";
+import QuizAPI from "../../utils/QuizAPI";
 import { Link } from "react-router-dom";
 
 
