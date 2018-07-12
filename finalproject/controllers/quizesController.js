@@ -3,7 +3,6 @@ const Quizes = require("../models/quizes");
 // Defining methods for the quizesController
 module.exports = {
   findAll: function(req, res) {
-    console.log("YAda", req.query);
     Quizes
       .find(req.query)
       .sort({ date: -1 })

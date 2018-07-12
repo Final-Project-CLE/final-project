@@ -7,8 +7,7 @@ import QuizAPI from "../../utils/QuizAPI";
 
 class Quizzes extends Component {
   state = {
-    quizzes: [],
-    test: ""
+    quizzes: []
   }
 
   componentDidMount() {
@@ -21,12 +20,9 @@ class Quizzes extends Component {
     QuizAPI.getQuizzes()
     .then(res =>
       this.setState({ 
-        quizzes: res.data,
-        test: "sean" })
+        quizzes: res.data})
     )
-    .catch(err => console.log(err));
-    alert(this.state.quizzes) 
-    
+    .catch(err => console.log(err))    
   }
 
   render() {
@@ -37,7 +33,7 @@ class Quizzes extends Component {
             {this.state.quizzes.map(item => (
               <QuizBox
                 key={item.id}
-                id={item.id}
+                id={item._id}
                 quizTitle={item.quizTitle}
               />
             ))}

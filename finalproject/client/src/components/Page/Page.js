@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import data from "../../data.json";
 import Jumbotron from '../Jumbotron/Jumbotron';
 import Quizzes from "../../pages/Quizzes/Quizzes";
 import Login from "../../pages/Login/Login";
@@ -11,12 +10,6 @@ import Quiz from "../../pages/Quiz/Quiz";
 
 
 class Page extends Component {
-  state = {
-    data
-  }
-  handleSubmit = () =>{
-    alert("You submitted this thingy!")
-  }
   render() {
     return (
     <Router>
